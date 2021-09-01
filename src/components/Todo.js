@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Todo = props => {
+    const handleClick = () => {
+        props.handleToggleComplete(props.item.id);
+    }
+
     return (
-        <div>
+        <div onClick={handleClick} className={`item${props.item.completed ? ' completed' : ''}`}>
             <p>{props.item.task}</p>
         </div>
     )
