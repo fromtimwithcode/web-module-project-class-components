@@ -6,12 +6,12 @@ import './styles.scss';
 const todo = [
   {
     id: 1,
-    task: 'Completed Todoizt',
+    task: 'Complete Todoizt MVP',
     completed: false
   },
   {
     id: 2,
-    task: 'Test Task',
+    task: 'Style Todoizt',
     completed: false
   }
 ];
@@ -67,7 +67,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="Header">
-          <h2>Todoizt</h2>
+          <h1>Todoizt</h1>
+        </div>
+        <div className="Form">
           <TodoForm handleAdd={this.handleAdd} handleClear={this.handleClear} />
         </div>
         <TodoList todo={this.state.todo} handleToggleComplete={this.handleToggleComplete} />
