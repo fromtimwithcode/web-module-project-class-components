@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@700&display=swap");
+html,
+body {
+  box-sizing: border-box;
+  max-width: 100%;
+  background-color: #f8e5e5;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+  font-family: "Lora", serif;
+  text-transform: lowercase;
+  color: #000000;
+}
+h1 {
+  color: #fa255e;
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+p {
+  font-size: 1.3rem;
+}
+input {
+  margin: 0.5rem;
+  padding: 1.2rem;
+  background: #000000;
+  border: none;
+  border-radius: 0.2rem;
+  color: #fa255e;
+}
+::placeholder {
+  color: #fa255e;
+}
+form {
+  display: flex;
+  flex-flow: column wrap;
+}
+button {
+  background-color: #000000;
+  color: #fa255e;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+  margin: 0.1rem;
+}
+.App {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.Form {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem 3rem;
+  margin: 0.5rem;
+}
+.item.completed {
+  text-decoration: line-through;
+}
+.todo-list {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.task {
+  display: flex;
+  justify-content: center;
+  background-color: #c39ea0;
+  text-align: center;
+  border-radius: 0.2rem;
+  padding: 1.5rem;
+  margin: 0.2rem;
+}
